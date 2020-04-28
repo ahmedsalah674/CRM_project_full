@@ -1,0 +1,16 @@
+frist you will need atlest laravel 7.2
+open cmd on file to download the project in it then whrite this comand lines:
+1)git clone 
+check if it create a new file then you will need to git in this file by:
+2)cd 'file name'
+3)composer install
+4)copy .env.example .env
+5)php artisan key:generate
+6)now you need to open phpmyadmin and create a new database and name it ('crm')
+7)php artisan migrate
+8)php artisan db:seed
+9)php artisan serve
+now project is ready but please note that you cann't rejester  you will use this admin account to create a new users(admins,employees,customer)
+username:admin@admin.com
+password:123456789
+

@@ -1,6 +1,6 @@
 frist you will need at lest laravel 7.2
 open cmd on file to download the project in it then whrite this comand lines:
-1)git clone 
+1)git clone https://github.com/ahmedsalah674/CRM_project_full
 check if it create a new file then you will need to git in this file by:
 2)cd 'file name'
 3)composer install

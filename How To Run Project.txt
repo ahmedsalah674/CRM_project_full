@@ -1,4 +1,4 @@
-frist you will need atlest laravel 7.2
+frist you will need at lest laravel 7.2
 open cmd on file to download the project in it then whrite this comand lines:
 1)git clone 
 check if it create a new file then you will need to git in this file by:

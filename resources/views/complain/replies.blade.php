@@ -1,8 +1,8 @@
 @extends('adminlte::page')
-@section('title','All Complains')
+@section('title','All Replies')
 @section('content_header')
 @include('error')
-  <h1>All Complains</h1>
+  <h1>All Replies</h1>
 @endsection
 @section('content')
 

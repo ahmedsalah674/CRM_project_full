@@ -54,11 +54,13 @@ class viewuserscontroller extends Controller
     }
     public function update(Request $request)
     { 
+      if($request->email!=\Auth::user()->email)
+         $this->validate($request,['email' => ['required', 'string', 'email', 'max:255', 'unique:users'],]);
       if($request->image)
       {
          $this->validate($request,[
         'name' => ['required', 'string', 'max:255'],
-        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        // 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
       ]);
         $user=user::find(\Auth::user()->id);

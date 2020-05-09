@@ -163,9 +163,8 @@ class AppServiceProvider extends ServiceProvider
                  'label_color' => 'success',
                ],
              );
-           }$event->menu->add(
-           
-          
+           }
+           $event->menu->add(
            [
             'text' => 'Complains Replies',
              'url' => route('complain.replies',0),

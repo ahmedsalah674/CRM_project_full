@@ -471,7 +471,6 @@ class ComposerStaticInitd09191840b8a15fd292635abfcf9246f
 
     public static $classMap = array (
         'App\\Complain' => __DIR__ . '/../..' . '/app/Complain.php',
-        'App\\ComplainReplays' => __DIR__ . '/../..' . '/app/ComplainReplays.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -482,6 +481,7 @@ class ComposerStaticInitd09191840b8a15fd292635abfcf9246f
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\SystemRateController' => __DIR__ . '/../..' . '/app/Http/Controllers/SystemRateController.php',
         'App\\Http\\Controllers\\complaincontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/complaincontroller.php',
         'App\\Http\\Controllers\\viewuserscontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/viewuserscontroller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -497,9 +497,10 @@ class ComposerStaticInitd09191840b8a15fd292635abfcf9246f
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Rate' => __DIR__ . '/../..' . '/app/Rate.php',
+        'App\\Reply' => __DIR__ . '/../..' . '/app/Reply.php',
+        'App\\SystemRate' => __DIR__ . '/../..' . '/app/SystemRate.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
-        'App\\rate' => __DIR__ . '/../..' . '/app/rate.php',
-        'App\\viewallusers' => __DIR__ . '/../..' . '/app/viewallusers.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',

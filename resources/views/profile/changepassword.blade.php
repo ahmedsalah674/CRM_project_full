@@ -1,4 +1,3 @@
-
 @extends('adminlte::page')
 @section('title','Change Password')
 @section('content_header')

@@ -174,7 +174,7 @@ return [
 
     'login_url' => 'login',
 
-    'register_url' => 'register',
+    'register_url' => null,
 
     'password_reset_url' => 'password/reset',
 
@@ -208,6 +208,16 @@ return [
     |
     */
 
+    'menu' => [
+        
+        [
+            'text' => 'blog',
+            'url'  => 'admin/blog',
+            'can'  => 'manage-blog',
+        ],
+        
+        
+    ],
     
 
     /*

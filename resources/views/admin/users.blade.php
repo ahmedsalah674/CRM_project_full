@@ -2,7 +2,13 @@
 @section('title','All Users')
 @section('content_header')
 @include('error')
-<h1>ALL</h1>
+@if ($user->role == 0)
+    <h1>ALL Admins</h1>
+@elseif ($user->role == 1)
+    <h1>ALL Employees</h1>
+@elseif($user->role == 2)
+    <h1>ALL Customers</h1>
+@endif
 @endsection
 @section('content')
 

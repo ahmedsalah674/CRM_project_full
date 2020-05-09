@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Complain extends Model
 {
         protected $fillable = [
-          'title','details','image','customer_id','employee_id','state','rate','system_rate',
+          'title','details','image','customer_id','employee_id','state','rate',
         ];
     
         public function getImageAttribute($value)

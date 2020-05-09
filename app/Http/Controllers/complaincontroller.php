@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Complain;
 use App\User;
- use \Carbon\Carbon;
+use \Carbon\Carbon;
 use App\ComplainReplays;
 use App\Rate;
 use App\Reply;

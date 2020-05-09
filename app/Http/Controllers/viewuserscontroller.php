@@ -19,15 +19,17 @@ class viewuserscontroller extends Controller
     and take the sign to send it to be able to determine the difference  between the display and the sign
     in the users view will detremine using the sign
   */
-   PUblic function index($role)
-    {
+   Public function index($role)
+    {if($role<3 && $role>=0){
       if(\Auth::user()->role !=0)
         return redirect()->with('error',"You Cann't Open This Page");
       $users= User::where('role','=',$role)->get();
       if(!$users)
         abort(404);
       else
-        return(view('admin.users',compact('users')));
+        return(view('admin.users',compact('users')));}
+      else
+        abort(404);
     }
     
     public function show($id)
@@ -54,21 +56,13 @@ class viewuserscontroller extends Controller
     }
     public function update(Request $request)
     { 
-<<<<<<< HEAD
       if($request->email!=\Auth::user()->email)
-=======
-        if($request->email != \Auth::user()->email)
->>>>>>> e32883e61980de75892bec022496edff107436c7
          $this->validate($request,['email' => ['required', 'string', 'email', 'max:255', 'unique:users'],]);
       if($request->image)
       {
          $this->validate($request,[
         'name' => ['required', 'string', 'max:255'],
-<<<<<<< HEAD
         // 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-=======
-//         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
->>>>>>> e32883e61980de75892bec022496edff107436c7
         'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
       ]);
         $user=user::find(\Auth::user()->id);

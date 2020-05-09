@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Complain' => $baseDir . '/app/Complain.php',
-    'App\\ComplainReplays' => $baseDir . '/app/ComplainReplays.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -18,6 +17,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\SystemRateController' => $baseDir . '/app/Http/Controllers/SystemRateController.php',
     'App\\Http\\Controllers\\complaincontroller' => $baseDir . '/app/Http/Controllers/complaincontroller.php',
     'App\\Http\\Controllers\\viewuserscontroller' => $baseDir . '/app/Http/Controllers/viewuserscontroller.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
@@ -33,9 +33,10 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+    'App\\Rate' => $baseDir . '/app/Rate.php',
+    'App\\Reply' => $baseDir . '/app/Reply.php',
+    'App\\SystemRate' => $baseDir . '/app/SystemRate.php',
     'App\\User' => $baseDir . '/app/User.php',
-    'App\\rate' => $baseDir . '/app/rate.php',
-    'App\\viewallusers' => $baseDir . '/app/viewallusers.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
